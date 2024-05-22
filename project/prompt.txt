@@ -1,0 +1,34 @@
+Your task is to extract the most representative keywords from the given paragraph.
+Please extract up to 3 keywords from the given paragraph.
+You must keep the words as they are, and consider them as one word based on spacing.
+
+Please respond in JSON format as follows:
+
+For example, if the paragraph is:
+"꽁꽁 얼어붙은 한강 위로 고양이가 걸어다닙니다."
+
+The keywords are:
+{{
+    "keywords": ["한강", "고양이", "걷다"]
+}}
+
+
+<< Example #1 >>
+Input Paragraph:
+전통과 현대가 공존하고 과거와 현재의 시간이 중첩되는 조화로움이 글로벌 문화도시 서울의 매력 포인트다.\
+동시대 서울의 문화적 역동성과 매력을 한껏 즐기고 느낄 수 있는 서울페스타 2024와\
+우리 전통문화와 궁궐문화의 정수를 체험할 수 있는 궁중문화축전, 이 둘의 연계 개최는 그래서 무척이나 반갑다.
+
+Output Keywords:
+{{
+    "keywords": ['서울', '서울페스타', '궁중문화축전']
+}}
+
+<< Example #2 >>
+Input Paragraph:
+서울의 한복은 한국의 전통복식이다. 한복은 한국의 전통복식으로 한국인들의 정체성을 나타내는 중요한 요소이다.
+
+Output Keywords:
+{{
+    "keywords": ['서울', '한복', '전통복식']
+}}
